@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#1b2639" />
+  <meta name="description" content="Three little poems, written with Katie in mind." />
+  <title>For Katie · Under the Same Moon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#f9ece4;--muted:#c5b8bd;--accent:#f4bcc5;--gold:#e8caa1;--border:rgba(244,214,212,.2)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;color:var(--ink);font-family:'DM Sans',sans-serif;background:#182338;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at 75% 8%,#45516d80,transparent 39%),radial-gradient(ellipse at 13% 85%,#654b6380,transparent 37%),linear-gradient(#1b2639,#25283b 70%,#392e43);z-index:-3}
+    .stars{position:fixed;inset:0;z-index:-2;pointer-events:none;background-image:radial-gradient(#fff9 1px,transparent 1.5px),radial-gradient(#fff8 1px,transparent 1.5px);background-size:127px 131px,179px 197px;background-position:0 0,49px 92px;opacity:.6}
+    .topbar{max-width:1160px;margin:auto;padding:28px 32px;display:flex;justify-content:space-between;align-items:center;letter-spacing:.17em;font-size:10px;text-transform:uppercase;color:#e8d8d9}.topbar span:first-child{font-family:'Great Vibes',cursive;font-size:29px;letter-spacing:0;text-transform:none;color:#f6d8d6}.topbar .mark{opacity:.65}
+    .hero{min-height:660px;max-width:1180px;margin:auto;padding:72px 32px 68px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:16px;position:relative}.eyebrow{letter-spacing:.32em;text-transform:uppercase;font-size:11px;color:var(--gold);font-weight:600}.hero h1{font-family:'Playfair Display',serif;font-weight:400;font-size:clamp(64px,8.3vw,124px);line-height:1.04;letter-spacing:-.065em;margin:22px 0 24px}.hero h1 em{color:var(--accent);font-weight:400}.hero .intro{font-family:'Playfair Display',serif;font-style:italic;font-size:19px;color:#d7c8cb;line-height:1.9;max-width:430px}.cta{border:1px solid #f4b7c5;background:#f4b7c5;color:#293043;border-radius:100px;padding:16px 26px;font-family:'DM Sans',sans-serif;font-size:12px;letter-spacing:.13em;font-weight:600;text-transform:uppercase;cursor:pointer;transition:.25s;margin-top:20px}.cta:hover{background:#ffe1e7;transform:translateY(-3px)}
+    .scene{height:540px;position:relative;display:flex;align-items:center;justify-content:center}.moon{position:absolute;width:325px;height:325px;border-radius:50%;top:32px;right:16%;background:radial-gradient(circle at 36% 37%,#fff6e8,#eadbcf 64%,#bcbac6);box-shadow:0 0 48px #f3dce140,0 0 155px #f7dbe524}.moon:before{content:"";position:absolute;inset:25px;border-radius:50%;background:radial-gradient(circle at 32% 27%,#b8abb021 0 10%,transparent 11%),radial-gradient(circle at 65% 65%,#b4a5ae1c 0 13%,transparent 14%)}
+    .flower-art{position:absolute;bottom:-36px;width:100%;max-width:520px;filter:drop-shadow(0 15px 18px #080b1870);animation:sway 8s ease-in-out infinite;transform-origin:bottom center}@keyframes sway{50%{transform:rotate(2deg)}}
+    .section{padding:100px 24px 125px;position:relative}.section-inner{max-width:910px;margin:auto;text-align:center}.divider-label{display:flex;justify-content:center;align-items:center;gap:20px;color:var(--gold);font-size:11px;letter-spacing:.25em;text-transform:uppercase}.divider-label:before,.divider-label:after{content:"";height:1px;width:68px;background:var(--border)}h2{font-family:'Playfair Display',serif;font-weight:400;letter-spacing:-.035em;font-size:clamp(40px,6vw,70px);margin:24px 0 16px}.subtitle{font-family:'Playfair Display',serif;font-style:italic;font-size:18px;color:#d4bcc5;margin:0 auto 48px;max-width:550px;line-height:1.7}
+    .chapter-nav{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin-bottom:38px}.chapter-btn{font-family:'DM Sans',sans-serif;color:#e7d9df;background:#ffffff0a;border:1px solid var(--border);border-radius:40px;padding:13px 20px;cursor:pointer;font-size:12px;transition:.2s}.chapter-btn:hover,.chapter-btn.active{background:#f4b7c520;border-color:#f0bfc8;color:#ffe0e5}
+    .poem-card{position:relative;border:1px solid var(--border);background:linear-gradient(145deg,#ffffff0c,#ffffff05);box-shadow:0 15px 55px #090e1b4d,inset 0 1px #fff1;max-width:730px;margin:auto;padding:58px 35px 55px;border-radius:5px;min-height:620px}.poem-card:before,.poem-card:after{content:'✦';position:absolute;color:#eed3bd;font-size:17px;opacity:.65;top:21px;left:25px}.poem-card:after{top:auto;left:auto;bottom:21px;right:25px}.poem-card h3{font-family:'Great Vibes',cursive;font-weight:400;font-size:54px;color:#f8cbd4;margin:0 0 29px}.verse{font-family:'Playfair Display',serif;font-size:clamp(15px,2.3vw,19px);line-height:2.13;color:#f4e8e4;white-space:pre-line}.chapter-note{color:#bbadb5;letter-spacing:.15em;text-transform:uppercase;font-size:10px;margin-top:35px}.poem-card[hidden]{display:none}
+    .closing{padding:90px 24px 125px;text-align:center;background:linear-gradient(transparent,#0c1425b8)}.closing .tiny-flower{font-size:35px;color:#f1c5d0}.closing h2{font-size:clamp(39px,6vw,68px)}.closing p{max-width:570px;margin:0 auto;font-family:'Playfair Display',serif;line-height:1.9;font-size:19px;color:#e4d5d6}.signature{font-family:'Great Vibes',cursive;font-size:46px;color:#efc8d2;margin-top:33px}.footer{font-size:10px;letter-spacing:.18em;color:#a5a4b3;text-transform:uppercase;margin-top:55px}
+    .petal{position:fixed;top:-40px;pointer-events:none;z-index:10;animation:fall linear forwards;opacity:.8;color:#f9ccd5}@keyframes fall{to{transform:translate(90px,105vh) rotate(500deg);opacity:0}}
+    @media(max-width:750px){.topbar{padding:20px}.hero{grid-template-columns:1fr;text-align:center;padding:35px 22px 35px;gap:0}.hero .intro{margin-left:auto;margin-right:auto}.hero h1{font-size:70px}.scene{height:350px;order:-1}.moon{width:225px;height:225px;top:13px;right:calc(50% - 112px)}.flower-art{width:330px;bottom:-15px}.section{padding-top:65px}.poem-card{padding:43px 19px;min-height:580px}.verse{font-size:15px;line-height:2}.poem-card h3{font-size:47px}.chapter-btn{padding:11px 13px}.topbar .mark{display:none}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;scroll-behavior:auto!important}}
+  </style>
+</head>
+<body>
+<div class="stars"></div>
+<header class="topbar"><span>For Katie ♡</span><span class="mark">a little garden of words</span><span>✦ under the same moon</span></header>
+<main>
+  <section class="hero">
+    <div><div class="eyebrow">A little garden, just for you</div><h1>Dear<br><em>Katie.</em></h1><p class="intro">A moonlit garden of sampaguita and hibiscus, with a few poems to brighten your day.</p><button class="cta" id="openPoems">Step into the garden &nbsp; ↗</button></div>
+    <div class="scene" aria-hidden="true"><div class="moon"></div><svg class="flower-art" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="stem" x1="0" x2="1" y2="1"><stop stop-color="#9fae82"/><stop offset="1" stop-color="#587d73"/></linearGradient><radialGradient id="pink"><stop stop-color="#ffe2e4"/><stop offset="1" stop-color="#d98da9"/></radialGradient></defs><g fill="none" stroke="url(#stem)" stroke-width="5" stroke-linecap="round"><path d="M240 492 Q220 330 270 125"/><path d="M240 492 Q150 323 115 205"/><path d="M240 492 Q320 311 387 208"/><path d="M240 492 Q260 343 335 310"/><path d="M239 492 Q171 352 176 328"/></g><g fill="#779780"><path d="M220 385 Q126 312 114 360 Q152 405 220 385"/><path d="M252 358 Q337 292 356 337 Q316 378 252 358"/><path d="M196 301 Q124 259 129 302 Q155 325 196 301"/><path d="M295 280 Q340 236 346 269 Q335 295 295 280"/></g><g transform="translate(272 128)"><g fill="url(#pink)" opacity=".98"><ellipse rx="43" ry="81" cy="-45"/><ellipse rx="43" ry="81" cy="-45" transform="rotate(72)"/><ellipse rx="43" ry="81" cy="-45" transform="rotate(144)"/><ellipse rx="43" ry="81" cy="-45" transform="rotate(216)"/><ellipse rx="43" ry="81" cy="-45" transform="rotate(288)"/></g><circle r="22" fill="#7d415c"/><circle r="13" fill="#e8b984"/></g><g transform="translate(113 201) scale(.62)"><g fill="#fff4e9"><ellipse cy="-42" ry="58" rx="28"/><ellipse cy="-42" ry="58" rx="28" transform="rotate(60)"/><ellipse cy="-42" ry="58" rx="28" transform="rotate(120)"/><ellipse cy="-42" ry="58" rx="28" transform="rotate(180)"/><ellipse cy="-42" ry="58" rx="28" transform="rotate(240)"/><ellipse cy="-42" ry="58" rx="28" transform="rotate(300)"/></g><circle r="13" fill="#f1cb8b"/></g><g transform="translate(388 208) scale(.55)"><g fill="#fff4e9"><ellipse cy="-42" ry="58" rx="28"/><ellipse cy="-42" ry="58" rx="28" transform="rotate(60)"/><ellipse cy="-42" ry="58" rx="28" transform="rotate(120)"/><ellipse cy="-42" ry="58" rx="28" transform="rotate(180)"/><ellipse cy="-42" ry="58" rx="28" transform="rotate(240)"/><ellipse cy="-42" ry="58" rx="28" transform="rotate(300)"/></g><circle r="13" fill="#f1cb8b"/></g><g transform="translate(338 307) scale(.49)"><g fill="#f6b4c8"><ellipse cy="-42" ry="58" rx="28"/><ellipse cy="-42" ry="58" rx="28" transform="rotate(72)"/><ellipse cy="-42" ry="58" rx="28" transform="rotate(144)"/><ellipse cy="-42" ry="58" rx="28" transform="rotate(216)"/><ellipse cy="-42" ry="58" rx="28" transform="rotate(288)"/></g><circle r="15" fill="#a95c78"/></g><g transform="translate(176 329) scale(.4)"><g fill="#fdf2de"><ellipse cy="-42" ry="58" rx="28"/><ellipse cy="-42" ry="58" rx="28" transform="rotate(72)"/><ellipse cy="-42" ry="58" rx="28" transform="rotate(144)"/><ellipse cy="-42" ry="58" rx="28" transform="rotate(216)"/><ellipse cy="-42" ry="58" rx="28" transform="rotate(288)"/></g><circle r="14" fill="#e7c387"/></g></svg></div>
+  </section>
+  <section class="section" id="poems"><div class="section-inner"><div class="divider-label">Three little chapters</div><h2>A garden of small wonders</h2><p class="subtitle">One poem for the little joys, one for brighter days, and one for when the stars come out.</p><nav class="chapter-nav" aria-label="Choose a poem"><button class="chapter-btn active" data-chapter="0" aria-pressed="true">01 · Little things</button><button class="chapter-btn" data-chapter="1" aria-pressed="false">02 · Bloom brightly</button><button class="chapter-btn" data-chapter="2" aria-pressed="false">03 · Goodnight</button></nav>
+    <article class="poem-card" data-poem="0"><h3>The Little Things</h3><div class="verse">A flower by the window, a breeze across the trees,
+The sunlight finding silver in the dancing of the leaves.
+A favourite song, a funny thought, a reason just to smile,
+The little things can turn a day to something sweet awhile.
+
+Like sampaguita in the evening, blooming soft and white,
+Or hibiscus in the morning, full of colour, full of light,
+There is a kind of magic in the ordinary view—
+The world is full of wonders in the things we wander through.
+
+So may your days hold moments that are lovely, bright, and small,
+And may you always find some joy in the middle of it all.</div><div class="chapter-note">for the small things that make us smile ✧</div></article>
+    <article class="poem-card" data-poem="1" hidden><h3>May You Bloom Brightly</h3><div class="verse">May mornings greet you gently with a sky of golden blue,
+And may the day have something unexpectedly good for you.
+May laughter find you often, may your worries learn to rest,
+And may you see that trying hard is sometimes doing your best.
+
+Like hibiscus turning sunward in the warmth of early spring,
+May you grow in your own season and enjoy the little things.
+Like sampaguita after rain, serene beneath the sky,
+May you find your quiet courage when the busy hours fly.
+
+And on the days that feel too long, when everything seems slow,
+Remember even gardens take their own sweet time to grow.
+There is no need to rush the dawn or race the falling rain;
+Tomorrow brings another chance to start with hope again.</div><div class="chapter-note">a little wish for brighter days ✿</div></article>
+    <article class="poem-card" data-poem="2" hidden><h3>A Quiet Goodnight</h3><div class="verse">The day is gently fading, and the stars begin to shine;
+I hope the night brings peaceful thoughts and gives you quiet time.
+If anything felt heavy, may it soften with the breeze,
+And may you find some comfort in the small and simple things.
+
+May dreams be soft as petals, may the moon be warm and bright,
+May sampaguita's sweetness fill the stillness of the night.
+Tomorrow holds a thousand chances for a brand-new start,
+For laughter, rest, and little joys that settle in your heart.
+
+So goodnight, Katie, sleep well and let the day be done;
+I hope tomorrow treats you kindly with the rising sun.</div><div class="chapter-note">rest well, Katie ☾</div></article>
+  </div></section>
+  <section class="closing"><div class="tiny-flower">✿</div><div class="divider-label">One last little thought</div><h2>Keep blooming, Katie.</h2><p>Like your favourite flowers, may you find sunshine after rainy days, quiet moments when life gets loud, and plenty of reasons to smile.</p><div class="signature">Sweet dreams.</div><div class="footer">sampaguita, hibiscus & a little moonlight · ✿</div></section>
+</main>
+<script>
+  const buttons=document.querySelectorAll('[data-chapter]');const poems=document.querySelectorAll('[data-poem]');
+  function showChapter(n){buttons.forEach((b,i)=>{b.classList.toggle('active',i===n);b.setAttribute('aria-pressed',String(i===n))});poems.forEach((p,i)=>p.hidden=i!==n)}
+  buttons.forEach((b,i)=>b.addEventListener('click',()=>showChapter(i)));
+  document.getElementById('openPoems').addEventListener('click',()=>document.getElementById('poems').scrollIntoView({behavior:'smooth'}));
+  if(!matchMedia('(prefers-reduced-motion: reduce)').matches){setInterval(()=>{if(document.hidden)return;const p=document.createElement('span');p.className='petal';p.textContent=Math.random()>.5?'✿':'❀';p.style.left=Math.random()*100+'vw';p.style.fontSize=(9+Math.random()*13)+'px';p.style.animationDuration=(8+Math.random()*7)+'s';document.body.append(p);setTimeout(()=>p.remove(),16000)},1800)}
+</script>
+</body>
+</html>
